@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  my-express:
+    image: express-container
+    container_name: my-express-api
+    build:
+      context: .
+    ports:
+      - "8001:8000"
